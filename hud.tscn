@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dleknd80mwoqf"]
+[gd_scene load_steps=9 format=3 uid="uid://dleknd80mwoqf"]
 
 [ext_resource type="FontFile" uid="uid://sdcjepg6cow4" path="res://PressStart2P-Regular.ttf" id="1_fr4iy"]
 
@@ -45,6 +45,10 @@ border_width_top = 8
 border_width_right = 8
 border_width_bottom = 8
 border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_hwlcv"]
+font = ExtResource("1_fr4iy")
+font_size = 30
 
 [node name="HUD" type="Control"]
 layout_mode = 3
@@ -165,10 +169,11 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 8.0
-offset_top = 8.0
-offset_right = -8.0
-offset_bottom = -8.0
+offset_left = 11.0
+offset_top = 14.0
+offset_right = -11.0
+offset_bottom = -16.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "lorem"
+text = "Text goes here"
+label_settings = SubResource("LabelSettings_hwlcv")
