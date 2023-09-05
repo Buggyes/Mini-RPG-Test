@@ -1,0 +1,5 @@
+res://hud.tscn
+res://battle.tscn
+res://Entities/player.tscn
+res://Entities/enemy.tscn
+res://Entities/Fighter.tscn
