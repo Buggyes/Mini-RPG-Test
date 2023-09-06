@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://eojda87p23m"]
+[gd_scene load_steps=5 format=3 uid="uid://eojda87p23m"]
 
+[ext_resource type="Script" path="res://src/battle.cs" id="1_gpuy4"]
 [ext_resource type="PackedScene" uid="uid://cbg1paqm0gtuu" path="res://Entities/player.tscn" id="1_irgc5"]
 [ext_resource type="PackedScene" uid="uid://d0jcfkgum4cvc" path="res://Entities/fighter.tscn" id="2_slbnf"]
 [ext_resource type="PackedScene" uid="uid://dleknd80mwoqf" path="res://hud.tscn" id="3_k2kh0"]
 
 [node name="Battle" type="Node"]
+script = ExtResource("1_gpuy4")
 
 [node name="Player" parent="." instance=ExtResource("1_irgc5")]
 position = Vector2(230, 300)
@@ -13,3 +15,10 @@ position = Vector2(230, 300)
 position = Vector2(892, 300)
 
 [node name="HUD" parent="." instance=ExtResource("3_k2kh0")]
+
+[connection signal="pressed" from="HUD/Actions/Button" to="." method="PlayerAttack"]
+[connection signal="pressed" from="HUD/TextBox/Button" to="." method="ContinueBattle"]
+
+[editable path="Player"]
+[editable path="Fighter"]
+[editable path="HUD"]

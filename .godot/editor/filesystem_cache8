@@ -1,9 +1,11 @@
 2a60927148abd1d33b818b535e306557
-::res://::1693997181
-battle.tscn::PackedScene::9123780172917576::1693914315::0::1::::<><>::
-hud.tscn::PackedScene::7940227437063725997::1693996438::0::1::::<><>::uid://sdcjepg6cow4
+::res://::1694001353
+battle.tscn::PackedScene::9123780172917576::1694001311::0::1::::<><>::uid://cbg1paqm0gtuu<>uid://d0jcfkgum4cvc<>uid://dleknd80mwoqf
+hud.tscn::PackedScene::7940227437063725997::1694001311::0::1::::<><>::uid://sdcjepg6cow4
 icon.svg::CompressedTexture2D::1656730630699658487::1693912295::1693997181::1::::<><>::
 PressStart2P-Regular.ttf::FontFile::1269730058457040577::1693914022::1693914022::1::::<><>::
-::res://Entities/::1693997181
-fighter.tscn::PackedScene::8932693440199923452::1693916674::0::1::::<><>::uid://sdcjepg6cow4
-player.tscn::PackedScene::4857021931564857288::1693997166::0::1::::<><>::uid://sdcjepg6cow4
+::res://Entities/::1693997477
+fighter.tscn::PackedScene::8932693440199923452::1693997459::0::1::::<><>::uid://sdcjepg6cow4
+player.tscn::PackedScene::4857021931564857288::1693997477::0::1::::<><>::uid://sdcjepg6cow4
+::res://src/::1694000844
+battle.cs::CSharpScript::-1::1693998770::0::1::::<><>::

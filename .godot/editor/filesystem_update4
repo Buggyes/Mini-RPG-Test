@@ -1,3 +1,4 @@
-res://Entities/player.tscn
-res://Entities/fighter.tscn
 res://battle.tscn
+res://Entities/fighter.tscn
+res://Entities/player.tscn
+res://hud.tscn
