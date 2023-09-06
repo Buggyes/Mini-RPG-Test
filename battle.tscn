@@ -1,3 +1,15 @@
-[gd_scene format=3 uid="uid://eojda87p23m"]
+[gd_scene load_steps=4 format=3 uid="uid://eojda87p23m"]
+
+[ext_resource type="PackedScene" uid="uid://cbg1paqm0gtuu" path="res://Entities/player.tscn" id="1_irgc5"]
+[ext_resource type="PackedScene" uid="uid://d0jcfkgum4cvc" path="res://Entities/fighter.tscn" id="2_slbnf"]
+[ext_resource type="PackedScene" uid="uid://dleknd80mwoqf" path="res://hud.tscn" id="3_k2kh0"]
 
 [node name="Battle" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource("1_irgc5")]
+position = Vector2(230, 300)
+
+[node name="Fighter" parent="." instance=ExtResource("2_slbnf")]
+position = Vector2(892, 300)
+
+[node name="HUD" parent="." instance=ExtResource("3_k2kh0")]

@@ -1,37 +1,35 @@
-[gd_scene load_steps=9 format=3 uid="uid://d0jcfkgum4cvc"]
+[gd_scene load_steps=9 format=3 uid="uid://cbg1paqm0gtuu"]
 
-[ext_resource type="FontFile" uid="uid://sdcjepg6cow4" path="res://PressStart2P-Regular.ttf" id="1_voae0"]
+[ext_resource type="FontFile" uid="uid://sdcjepg6cow4" path="res://PressStart2P-Regular.ttf" id="1_bwlj3"]
 
-[sub_resource type="Gradient" id="Gradient_dps71"]
-interpolation_mode = 1
+[sub_resource type="Gradient" id="Gradient_5b4yc"]
 offsets = PackedFloat32Array(0)
-colors = PackedColorArray(0.968599, 0, 0.123092, 1)
+colors = PackedColorArray(0, 0, 0.662745, 1)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_hebwr"]
-gradient = SubResource("Gradient_dps71")
-fill_from = Vector2(1, 0)
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1ybbj"]
+gradient = SubResource("Gradient_5b4yc")
 
 [sub_resource type="Gradient" id="Gradient_6uatr"]
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_8havc"]
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_my5ku"]
 gradient = SubResource("Gradient_6uatr")
 fill_from = Vector2(1, 0)
 
 [sub_resource type="Gradient" id="Gradient_8lqdl"]
 colors = PackedColorArray(1, 0.234886, 0.178821, 1, 1, 1, 1, 1)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_03lf0"]
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_oxasq"]
 gradient = SubResource("Gradient_8lqdl")
 fill_from = Vector2(1, 0)
 
-[sub_resource type="LabelSettings" id="LabelSettings_2scfb"]
+[sub_resource type="LabelSettings" id="LabelSettings_jsdea"]
 line_spacing = 0.0
-font = ExtResource("1_voae0")
+font = ExtResource("1_bwlj3")
 font_size = 12
 
-[node name="Fighter" type="Sprite2D"]
+[node name="Player" type="Sprite2D"]
 scale = Vector2(2, 2)
-texture = SubResource("GradientTexture2D_hebwr")
+texture = SubResource("GradientTexture2D_1ybbj")
 metadata/_edit_group_ = true
 
 [node name="HealthBar" type="Control" parent="."]
@@ -57,8 +55,8 @@ offset_bottom = -10.0
 grow_horizontal = 2
 value = 50.0
 nine_patch_stretch = true
-texture_under = SubResource("GradientTexture2D_8havc")
-texture_progress = SubResource("GradientTexture2D_03lf0")
+texture_under = SubResource("GradientTexture2D_my5ku")
+texture_progress = SubResource("GradientTexture2D_oxasq")
 
 [node name="Label" type="Label" parent="HealthBar/Bar"]
 layout_mode = 1
@@ -68,6 +66,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "100/100"
-label_settings = SubResource("LabelSettings_2scfb")
+label_settings = SubResource("LabelSettings_jsdea")
 horizontal_alignment = 1
 vertical_alignment = 1

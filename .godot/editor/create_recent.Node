@@ -1,3 +1,4 @@
+Sprite2D
 Label
 Panel
 Control
@@ -7,5 +8,4 @@ ColorRect
 TextureRect
 Button
 Container
-Sprite2D
 Node
