@@ -122,6 +122,7 @@ grow_vertical = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_ysug8")
 theme_override_styles/hover = SubResource("StyleBoxFlat_54keb")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_1d03f")
+metadata/_edit_group_ = true
 
 [node name="Label" type="Label" parent="Actions/Button"]
 layout_mode = 1
@@ -149,6 +150,7 @@ grow_vertical = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_ysug8")
 theme_override_styles/hover = SubResource("StyleBoxFlat_54keb")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_1d03f")
+metadata/_edit_group_ = true
 
 [node name="Label" type="Label" parent="Actions/Button2"]
 layout_mode = 1
@@ -176,6 +178,7 @@ grow_vertical = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_ysug8")
 theme_override_styles/hover = SubResource("StyleBoxFlat_54keb")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_1d03f")
+metadata/_edit_group_ = true
 
 [node name="Label" type="Label" parent="Actions/Button3"]
 layout_mode = 1

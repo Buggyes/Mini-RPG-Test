@@ -26,6 +26,11 @@ public partial class battle : Node
     {
         base._Ready();
 
+        InitializeBattle();
+    }
+
+    public void InitializeBattle()
+    {
         PlayerHP = maxPlayerHP;
         EnemyHP = maxEnemyHP;
 
@@ -53,9 +58,26 @@ public partial class battle : Node
         HideGameOver();
     }
 
-    public override void _Process(double delta)
+    public void ResetBattle()
     {
-        base._Process(delta);
+        PlayerHP = maxPlayerHP;
+        EnemyHP = maxEnemyHP;
+
+        playerHealthBar.MaxValue = maxPlayerHP;
+        playerHealthBar.Value = maxPlayerHP;
+
+        enemyHealthBar.MaxValue = maxEnemyHP;
+        enemyHealthBar.Value = maxEnemyHP;
+
+        playerHealthText.Text = PlayerHP + "/" + maxPlayerHP;
+        enemyHealthText.Text = EnemyHP + "/" + maxEnemyHP;
+
+        inBattle = true;
+
+        UpdateTextBoxLabel(">A wild cube appears");
+        ShowMessage();
+
+        HideGameOver();
     }
 
     public void CombatCheck()
@@ -133,7 +155,7 @@ public partial class battle : Node
             if (PlayerHP <= 0)
             {
                 ShowMessage();
-                UpdateTextBoxLabel(">The player's vision starts to blur, losing counciousness as he falls into the ground.");
+                UpdateTextBoxLabel(">The player's vision starts to blur. He loses counciousness as he falls into the ground.");
                 inBattle = false;
                 playerIsAlive = false;
             }
@@ -153,6 +175,11 @@ public partial class battle : Node
             }
         }
         CombatCheck();
+    }
+
+    public void QuitGame()
+    {
+        GetTree().Quit();
     }
     
     private void HideGameOver()

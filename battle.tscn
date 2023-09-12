@@ -21,6 +21,8 @@ visible = false
 
 [connection signal="pressed" from="HUD/Actions/Button" to="." method="PlayerAttack"]
 [connection signal="pressed" from="HUD/TextBox/Button" to="." method="HideMessage"]
+[connection signal="pressed" from="HUD/GameOver/RestartButton" to="." method="ResetBattle"]
+[connection signal="pressed" from="HUD/GameOver/QuitButton" to="." method="QuitGame"]
 
 [editable path="Player"]
 [editable path="Fighter"]
