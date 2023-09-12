@@ -7,13 +7,15 @@ public partial class battle : Node
     int maxEnemyHP = 30, EnemyHP;
 
     int playerDMG = 20;
-    int enemyDMG = 15;
+    int enemyDMG = 1000;
 
     bool playerTurn = true;
     bool inBattle = true;
+    bool playerIsAlive = true;
 
     Panel textBox;
     Panel actionMenu;
+    Panel gameOverScreen;
 
     TextureProgressBar playerHealthBar;
     TextureProgressBar enemyHealthBar;
@@ -29,6 +31,7 @@ public partial class battle : Node
 
         textBox = GetNode<Panel>("./HUD/TextBox");
         actionMenu = GetNode<Panel>("./HUD/Actions");
+        gameOverScreen = GetNode<Panel>("./HUD/GameOver");
 
         UpdateTextBoxLabel(">A wild cube appears");
 
@@ -46,12 +49,13 @@ public partial class battle : Node
 
         playerHealthText.Text = PlayerHP + "/" + maxPlayerHP;
         enemyHealthText.Text = EnemyHP + "/" + maxEnemyHP;
+
+        HideGameOver();
     }
 
     public override void _Process(double delta)
     {
         base._Process(delta);
-        CombatCheck();
     }
 
     public void CombatCheck()
@@ -61,18 +65,6 @@ public partial class battle : Node
             if (!playerTurn && actionMenu.Visible)
             {
                 EnemyAttack();
-            }
-            if (PlayerHP <= 0)
-            {
-                ShowMessage();
-                UpdateTextBoxLabel(">The player's vision starts to blur, losing counciousness as he falls into the ground.");
-                inBattle = false;
-            }
-            else if (EnemyHP <= 0)
-            {
-                ShowMessage();
-                UpdateTextBoxLabel(">The cube breaks down like glass, disapearing after a few moments.");
-                inBattle = false;
             }
         }
     }
@@ -137,10 +129,39 @@ public partial class battle : Node
         {
             textBox.Visible = false;
             actionMenu.Visible = true;
+
+            if (PlayerHP <= 0)
+            {
+                ShowMessage();
+                UpdateTextBoxLabel(">The player's vision starts to blur, losing counciousness as he falls into the ground.");
+                inBattle = false;
+                playerIsAlive = false;
+            }
+            else if (EnemyHP <= 0)
+            {
+                ShowMessage();
+                UpdateTextBoxLabel(">The cube breaks down like glass, disapearing after a few moments.");
+                inBattle = false;
+            }
         }
         else
         {
             textBox.Visible = false;
+            if (!playerIsAlive)
+            {
+                ShowGameOver();
+            }
         }
+        CombatCheck();
+    }
+    
+    private void HideGameOver()
+    {
+        gameOverScreen.Visible = false;
+    }
+
+    private void ShowGameOver()
+    {
+        gameOverScreen.Visible = true;
     }
 }

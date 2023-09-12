@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dleknd80mwoqf"]
+[gd_scene load_steps=16 format=3 uid="uid://dleknd80mwoqf"]
 
 [ext_resource type="FontFile" uid="uid://sdcjepg6cow4" path="res://PressStart2P-Regular.ttf" id="1_fr4iy"]
 
@@ -52,6 +52,41 @@ font_size = 30
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tyf0l"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ssr7w"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_m2076"]
+font = ExtResource("1_fr4iy")
+font_size = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c1ocf"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ci0bj"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m4sdm"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_if1pg"]
+font = ExtResource("1_fr4iy")
+font_size = 36
 
 [node name="HUD" type="Control"]
 layout_mode = 3
@@ -193,3 +228,89 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_tyf0l")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_tyf0l")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_tyf0l")
 theme_override_styles/focus = SubResource("StyleBoxFlat_tyf0l")
+
+[node name="GameOver" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ssr7w")
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="GameOver"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -174.0
+offset_right = 160.0
+offset_bottom = -131.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "You Died"
+label_settings = SubResource("LabelSettings_m2076")
+
+[node name="RestartButton" type="Button" parent="GameOver"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -164.0
+offset_top = -24.0
+offset_right = 165.0
+offset_bottom = 67.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_c1ocf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ci0bj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m4sdm")
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="GameOver/RestartButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Restart"
+label_settings = SubResource("LabelSettings_if1pg")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuitButton" type="Button" parent="GameOver"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -164.0
+offset_top = 116.0
+offset_right = 165.0
+offset_bottom = 207.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_c1ocf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ci0bj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m4sdm")
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="GameOver/QuitButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Quit"
+label_settings = SubResource("LabelSettings_if1pg")
+horizontal_alignment = 1
+vertical_alignment = 1

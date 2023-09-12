@@ -1,7 +1,7 @@
-Button
-Sprite2D
 Label
+Button
 Panel
+Sprite2D
 Control
 TextureProgressBar
 HScrollBar
