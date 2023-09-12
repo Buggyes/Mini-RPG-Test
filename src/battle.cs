@@ -10,6 +10,7 @@ public partial class battle : Node
     int enemyDMG = 15;
 
     bool playerTurn = true;
+    bool inBattle = true;
 
     Panel textBox;
     Panel actionMenu;
@@ -55,17 +56,24 @@ public partial class battle : Node
 
     public void CombatCheck()
     {
-        if (!playerTurn && actionMenu.Visible)
+        if (inBattle)
         {
-            EnemyAttack();
-        }
-        if(PlayerHP <= 0)
-        {
-
-        }
-        else if(EnemyHP <= 0)
-        {
-
+            if (!playerTurn && actionMenu.Visible)
+            {
+                EnemyAttack();
+            }
+            if (PlayerHP <= 0)
+            {
+                ShowMessage();
+                UpdateTextBoxLabel(">The player's vision starts to blur, losing counciousness as he falls into the ground.");
+                inBattle = false;
+            }
+            else if (EnemyHP <= 0)
+            {
+                ShowMessage();
+                UpdateTextBoxLabel(">The cube breaks down like glass, disapearing after a few moments.");
+                inBattle = false;
+            }
         }
     }
 
@@ -123,9 +131,16 @@ public partial class battle : Node
         textBox.Visible = true;
     }
 
-    public void ContinueBattle()
+    public void HideMessage()
     {
-        textBox.Visible = false;
-        actionMenu.Visible = true;
+        if (inBattle)
+        {
+            textBox.Visible = false;
+            actionMenu.Visible = true;
+        }
+        else
+        {
+            textBox.Visible = false;
+        }
     }
 }
