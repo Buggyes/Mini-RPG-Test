@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class battle : Node
+public partial class battleManager : Node
 {
     int maxPlayerHP = 50, PlayerHP;
     int maxEnemyHP = 30, EnemyHP;

@@ -95,11 +95,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\USERS\\MATHE\\DOCUMENTS\\GODOT PROJECTS\\MINI RPG TEST\\Mini RPG Test.csproj",
+      "projectUniqueName": "C:\\Users\\mathe\\Documents\\Godot Projects\\Mini-RPG-Test\\Mini RPG Test.csproj",
       "projectName": "Mini RPG Test",
-      "projectPath": "C:\\USERS\\MATHE\\DOCUMENTS\\GODOT PROJECTS\\MINI RPG TEST\\Mini RPG Test.csproj",
+      "projectPath": "C:\\Users\\mathe\\Documents\\Godot Projects\\Mini-RPG-Test\\Mini RPG Test.csproj",
       "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-      "outputPath": "C:\\USERS\\MATHE\\DOCUMENTS\\GODOT PROJECTS\\MINI RPG TEST\\.godot\\mono\\temp\\obj\\",
+      "outputPath": "C:\\Users\\mathe\\Documents\\Godot Projects\\Mini-RPG-Test\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Users\\mathe\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
@@ -163,7 +163,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

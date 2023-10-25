@@ -233,6 +233,7 @@ theme_override_styles/disabled = SubResource("StyleBoxFlat_tyf0l")
 theme_override_styles/focus = SubResource("StyleBoxFlat_tyf0l")
 
 [node name="GameOver" type="Panel" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

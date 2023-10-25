@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CHRXe0GLAw8Z6F6pRgV07dRFi7unNRG+NaXQ/D+ZG19pXM66Nnz/qiuTQkTdgazeoVJ1rjOFHijBa85mSHzLrg==",
+  "dgSpecHash": "tf0TjLUQoSmS9oC4laONyYycJRTR4gs0C3JGGR9Mgzvgi6gUZjksl1Na+u5XJCSXOttKArS1iTtzI0BI3Yctiw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mathe\\Documents\\Godot Projects\\Mini RPG Test\\Mini RPG Test.csproj",
+  "projectFilePath": "C:\\Users\\mathe\\Documents\\Godot Projects\\Mini-RPG-Test\\Mini RPG Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mathe\\.nuget\\packages\\godot.sourcegenerators\\4.0.2\\godot.sourcegenerators.4.0.2.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\godotsharp\\4.0.2\\godotsharp.4.0.2.nupkg.sha512",

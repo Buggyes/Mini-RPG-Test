@@ -15,3 +15,20 @@ C:\Users\mathe\Documents\Godot Projects\Mini RPG Test\.godot\mono\temp\obj\Debug
 C:\Users\mathe\Documents\Godot Projects\Mini RPG Test\.godot\mono\temp\obj\Debug\Mini RPG Test.pdb
 C:\Users\mathe\Documents\Godot Projects\Mini RPG Test\.godot\mono\temp\obj\Debug\Mini RPG Test.genruntimeconfig.cache
 C:\Users\mathe\Documents\Godot Projects\Mini RPG Test\.godot\mono\temp\obj\Debug\ref\Mini RPG Test.dll
+C:\Users\mathe\Documents\Godot Projects\Mini-RPG-Test\.godot\mono\temp\bin\Debug\Mini RPG Test.deps.json
+C:\Users\mathe\Documents\Godot Projects\Mini-RPG-Test\.godot\mono\temp\bin\Debug\Mini RPG Test.runtimeconfig.json
+C:\Users\mathe\Documents\Godot Projects\Mini-RPG-Test\.godot\mono\temp\bin\Debug\Mini RPG Test.dll
+C:\Users\mathe\Documents\Godot Projects\Mini-RPG-Test\.godot\mono\temp\bin\Debug\Mini RPG Test.pdb
+C:\Users\mathe\Documents\Godot Projects\Mini-RPG-Test\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\mathe\Documents\Godot Projects\Mini-RPG-Test\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\mathe\Documents\Godot Projects\Mini-RPG-Test\.godot\mono\temp\obj\Debug\Mini RPG Test.csproj.AssemblyReference.cache
+C:\Users\mathe\Documents\Godot Projects\Mini-RPG-Test\.godot\mono\temp\obj\Debug\Mini RPG Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\Documents\Godot Projects\Mini-RPG-Test\.godot\mono\temp\obj\Debug\Mini RPG Test.AssemblyInfoInputs.cache
+C:\Users\mathe\Documents\Godot Projects\Mini-RPG-Test\.godot\mono\temp\obj\Debug\Mini RPG Test.AssemblyInfo.cs
+C:\Users\mathe\Documents\Godot Projects\Mini-RPG-Test\.godot\mono\temp\obj\Debug\Mini RPG Test.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Documents\Godot Projects\Mini-RPG-Test\.godot\mono\temp\obj\Debug\Mini RPG Test.csproj.CopyComplete
+C:\Users\mathe\Documents\Godot Projects\Mini-RPG-Test\.godot\mono\temp\obj\Debug\Mini RPG Test.dll
+C:\Users\mathe\Documents\Godot Projects\Mini-RPG-Test\.godot\mono\temp\obj\Debug\refint\Mini RPG Test.dll
+C:\Users\mathe\Documents\Godot Projects\Mini-RPG-Test\.godot\mono\temp\obj\Debug\Mini RPG Test.pdb
+C:\Users\mathe\Documents\Godot Projects\Mini-RPG-Test\.godot\mono\temp\obj\Debug\Mini RPG Test.genruntimeconfig.cache
+C:\Users\mathe\Documents\Godot Projects\Mini-RPG-Test\.godot\mono\temp\obj\Debug\ref\Mini RPG Test.dll
