@@ -3,25 +3,25 @@ using System;
 
 public partial class battleManager : Node
 {
-    int maxPlayerHP = 50, PlayerHP;
-    int maxEnemyHP = 30, EnemyHP;
+    private int maxPlayerHP, PlayerHP;
+    private int maxEnemyHP, EnemyHP;
 
-    int playerDMG = 20;
-    int enemyDMG = 1000;
+    private int playerDMG;
+    private int enemyDMG;
 
-    bool playerTurn = true;
-    bool inBattle = true;
-    bool playerIsAlive = true;
+    private bool playerTurn = true;
+    private bool inBattle = true;
+    private bool playerIsAlive = true;
 
-    Panel textBox;
-    Panel actionMenu;
-    Panel gameOverScreen;
+    private Panel textBox;
+    private Panel actionMenu;
+    private Panel gameOverScreen;
 
-    TextureProgressBar playerHealthBar;
-    TextureProgressBar enemyHealthBar;
+    private TextureProgressBar playerHealthBar;
+    private TextureProgressBar enemyHealthBar;
 
-    Label playerHealthText;
-    Label enemyHealthText;
+    private Label playerHealthText;
+    private Label enemyHealthText;
     public override void _Ready()
     {
         base._Ready();
@@ -31,6 +31,14 @@ public partial class battleManager : Node
 
     public void InitializeBattle()
     {
+        RandomNumberGenerator rand = new RandomNumberGenerator();
+
+        maxPlayerHP = rand.RandiRange(100, 400);
+        maxEnemyHP = rand.RandiRange(100, 350);
+
+        playerDMG = rand.RandiRange(20, 60);
+        enemyDMG = rand.RandiRange(25, 50);
+
         PlayerHP = maxPlayerHP;
         EnemyHP = maxEnemyHP;
 
